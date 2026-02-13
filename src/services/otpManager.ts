@@ -21,6 +21,7 @@ export const sendOtp = async (email: string) => {
 
   await AsyncStorage.setItem(OTP_KEY, JSON.stringify(data));
   await logEvent('OTP_GENERATED');
+  console.log("Generated OTP for", email, "is:", otp);
   return otp;
 };
 
