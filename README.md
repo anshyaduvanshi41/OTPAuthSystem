@@ -115,8 +115,8 @@ AsyncStorage.setItem('isLoggedIn', 'true')
 On app start:
 - AsyncStorage is checked
 - Initial route is dynamically set to: 
-    - "Session" if logged in 
-    - "Login" otherwise
+- "Session" if logged in 
+- "Login" otherwise
 
 On logout:
 AsyncStorage.removeItem('isLoggedIn')
