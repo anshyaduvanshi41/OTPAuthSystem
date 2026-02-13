@@ -1,6 +1,6 @@
 # USER GUIDE -- How to Run and Use the Project
 
-Prerequisites
+## Prerequisites
 
 Make sure you have: 1. Node.js (v18 or above) 2. npm 3. Expo CLI 4. Expo
 Go App (installed on your phone)

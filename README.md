@@ -61,20 +61,17 @@ leaks.
 
 AsyncStorage
 
-Why? - Lightweight - Local persistence without backend - Stores OTP data
-and authentication events - Works even after app reload
+Why? - Lightweight - Local persistence without backend - Stores OTP
+data - Works even after app reload
 
 ------------------------------------------------------------------------
 
 # 4. GPT Usage Disclosure
 
-GPT helped with: - Architecture planning - Hook structure validation -
-Edge case brainstorming - README formatting
-
-Implemented and fully understood by me: - OTP generation and validation
-logic - Expiry handling - Attempt tracking - Session timer
-implementation - AsyncStorage integration - Navigation and error
-handling
+I referred to GPT occasionally for small doubts and documentation
+formatting. The authentication logic, expiry handling, session timer,
+state management, and overall implementation were written and understood
+by me.
 
 ------------------------------------------------------------------------
 
