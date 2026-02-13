@@ -1,10 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
-
 export const useSessionTimer = (active: boolean) => {
   const [duration, setDuration] = useState(0);
   const startTimeRef = useRef<number | null>(null);
-  const intervalRef = useRef<NodeJS.Timeout | null>(null);
-
+  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   useEffect(() => {
     if (active) {
       startTimeRef.current = Date.now();

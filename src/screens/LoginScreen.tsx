@@ -6,7 +6,7 @@ export default function LoginScreen({ navigation }: any) {
   const [email, setEmail] = useState('');
 
   const handleSendOtp = async () => {
-    if (!email) return;
+    if (!email.trim()) return;
     await sendOtp(email);
     navigation.navigate('Otp', { email });
   };

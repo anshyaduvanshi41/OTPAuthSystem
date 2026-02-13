@@ -9,6 +9,6 @@ export const logEvent = async (event: string) => {
     logs.push({ event, timestamp: Date.now() });
     await AsyncStorage.setItem(LOG_KEY, JSON.stringify(logs));
   } catch (e) {
-    console.log('Logging failed', e);
+    // error silently handled
   }
 };
