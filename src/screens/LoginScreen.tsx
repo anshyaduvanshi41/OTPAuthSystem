@@ -7,8 +7,10 @@ export default function LoginScreen({ navigation }: any) {
 
   const handleSendOtp = async () => {
     if (!email.trim()) return;
-    await sendOtp(email);
+    const generatedOtp = await sendOtp(email);
+    alert(`Your OTP is: ${generatedOtp}`);
     navigation.navigate('Otp', { email });
+
   };
 
   return (
